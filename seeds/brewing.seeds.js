@@ -6,7 +6,7 @@ const Brewing = require("../models/Brewing.model");
 // If no env has been set, we dynamically set it to whatever the folder name was upon the creation of the app
 
 const MONGO_URI =
-  process.env.MONGODB_URI || "";
+  process.env.MONGODB_URI || "http://localhost:5005";
 
 mongoose
   .connect(MONGO_URI)
@@ -24,7 +24,7 @@ const brewingArr = [
   {name: "Aeropress"}
 ];
 
-Brewing.create(brewingArr)
+Brewing.insertMany(brewingArr)
   .then((createdBrew) => {
     console.log(`Created ${createdBrew.length} in the DB`);
     mongoose.disconnect(() => console.log("Disconnected from the db"));
