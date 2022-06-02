@@ -5,9 +5,27 @@ const userSchema = new Schema(
   {
     username: {
       type: String,
+      required: true,
+      unique: true,
       // unique: true -> Ideally, should be unique, but its up to you
     },
-    password: String,
+    password: {
+      type: String,
+      required: true,
+    },
+    imgUrl: String,
+    store: String,
+    blockNotes: [
+      {
+        coffee: {type: Schema.Types.ObjectId, ref: "Coffee"},
+        description: String,
+      },
+    ],
+    userType: {
+      type: String,
+      enum: ["admin", "user"],
+      default: "user",
+    },
   },
   {
     // this second object adds extra properties: `createdAt` and `updatedAt`
