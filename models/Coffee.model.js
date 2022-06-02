@@ -10,7 +10,7 @@ const coffeeSchema = new Schema({
   body: String,
   acidity: String,
   blend: Boolean,
-  comments: [{type: Schema.Types.ObjectId, ref: 'Comments'}], //object id ref coments
+  comments: [{type: Schema.Types.ObjectId, ref: 'Comments'}], 
   coffeeType: {
     type: String,
     enum: ["Starbucks", "userCreation"],
