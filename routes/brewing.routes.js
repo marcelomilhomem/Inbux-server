@@ -10,7 +10,7 @@ router.get("/brewing", (req, res, next) => {
     .catch(() => res.status(400).json({ message: "No coffees foud :(" }));
 });
 
-router.get("/brewing/brew-detail/:brewingId", (req, res, next) => {
+router.get("/brewing/:brewingId", (req, res, next) => {
   const { brewingId } = req.params;
 
   Brewing.findById(brewingId)

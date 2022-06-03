@@ -17,6 +17,7 @@ router.post("/post/:id/comment", (req, res, next) => {
       .catch(() => res.status(400).json({ message: "No coffee found :(" }));
   });
 });
+
 router.delete("/comment/:commentId", (req, res, next) => {
   const { commentId } = req.params;
   Comment.findByIdAndDelete(commentId)
