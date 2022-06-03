@@ -1,7 +1,7 @@
 const { Schema, model } = require("mongoose");
 
 const brewingSchema = new Schema({
-    name: String,
+    title: String,
     coffeeGrind: String,
     quantity: String,
     extractionTime: Number,

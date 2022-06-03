@@ -10,6 +10,15 @@ router.get("/coffees", (req, res, next) => {
     .catch(() => res.status(400).json({ message: "No coffees foud :(" }));
 });
 
+
+router.get("/coffees/:coffeeId", (req, res, next) => {
+  const { coffeeId } = req.params;
+  Coffee.findById(coffeeId)
+    .then((response) => res.status(200).json(response))
+    .catch((err) => res.status(405).json({ message: "Invalid input" }));
+});
+
+
 router.get("/coffees/create", (req, res, next) => {
   const {
     coffeeImg,
