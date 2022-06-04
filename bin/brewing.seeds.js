@@ -6,22 +6,55 @@ const Brewing = require("../models/Brewing.model");
 // If no env has been set, we dynamically set it to whatever the folder name was upon the creation of the app
 
 const MONGO_URI =
-  process.env.MONGODB_URI || "mongodb+srv://macelo:ironHack@cluster0.ohkah.mongodb.net/Inbux?retryWrites=true&w=majority";
+  process.env.MONGODB_URI ||
+  "mongodb+srv://macelo:ironHack@cluster0.ohkah.mongodb.net/Inbux?retryWrites=true&w=majority";
 
 mongoose
   .connect(MONGO_URI)
   .then((x) => {
-    console.log(
-      `Connected to Mongo!"`
-    );
+    console.log(`Connected to Mongo!"`);
   })
   .catch((err) => {
     console.error("Error connecting to mongo: ", err);
   });
 
 const brewingArr = [
-  {name: "Chemex"},
-  {name: "Aeropress"}
+  {
+    title: "Chemex",
+    coffeeGrind: "Medium coarse (coarse | rough sand)",
+    quantity: "10 g coffe for 120 ml - 180 ml water",
+    extractionTime: 3,
+    waterTemperature: 94,
+    advice:
+      "Get the most out of our coffee by using a quality conical burr grinder, a scale, a timer and high-quality water. The standard golden ratio for Chemex® is 1g coffee to 15-18g water (1:15-18)",
+  },
+  {
+    title: "Kalita",
+    coffeeGrind: "Medium coarse (coarse | rough sand)",
+    quantity: "15 g of coffee to 230 g of water",
+    extractionTime: 3,
+    waterTemperature: 94,
+    advice:
+      "Get the most out of our coffee by using a quality conical burr grinder, a scale, a timer and high-quality water. The standard golden ratio for Kalita® is 1g coffee to 15-18g water (1:15-18)",
+  },
+  {
+    title: "v60",
+    coffeeGrind: "Medium coarse (coarse | rough sand",
+    quantity: "10 g coffee for 120 ml - 180 ml water",
+    extractionTime: 3,
+    waterTemperature: 94,
+    advice:
+      "Get the most out of our coffee by using a quality burr grinder, a scale, a timer and high-quality water. The standard golden ratio for V60 is 1g coffee to 15-18g water (1:15-18)",
+  },
+  {
+    title: "Aeropress",
+    coffeeGrind: "Medium coarse (rough sand)",
+    quantity: "18 g of coffee to 220 g of water",
+    extractionTime: 1,
+    waterTemperature: 92,
+    advice:
+      "Get the most out of our coffee by using a quality conical burr grinder, a scale, a timer and high-quality water. This recipe is known as an 'Inverted' method.",
+  },
 ];
 
 Brewing.insertMany(brewingArr)

@@ -14,14 +14,113 @@ const coffeesArr = [
     coffeeImg:
       "https://www.starbucks.com.au/imagecache/bestfit/750x750/_files/NEW-Photos-2016/Packaged-coffee/sumatra.png",
     title: "Sumatra",
-    origin: "Indonesia",
+    origin: "Asia Pacific, Sumatra",
     description: "Bold, dark roast coffeee",
     roast: "Dark",
-    processing: "Semi-washed",
+    processing: "Semi-Washed",
     body: "Bold",
     acidity: "Low",
     blend: false,
   },
+  {
+    coffeeImg: "",
+    title: "Caffé Verona",
+    origin: "Asia Pacific and Latin America",
+    description: "Romantic Coffee",
+    roast: "Dark",
+    processing: "Washed and Semi-Washed",
+    body: "High",
+    acidity: "Low",
+    blend: true
+  },
+  {
+    coffeImg: "",
+    title: "Espresso Roast",
+    origin: "Asia Pacific and Latin America",
+    description: "1975 Blend",
+    roast: "Dark",
+    processing: "Washed",
+    body: "High",
+    acidity: "Medium",
+    blend: true
+  },
+  {
+    coffeeImg: "",
+    title: "Colombia Nariño",
+    origin: "Latin America, Colombia",
+    description: "177cm3 rain per year",
+    roast: "Medium",
+    processing: "Washed",
+    body: "Soft",
+    acidity: "High",
+    blend: false
+  },
+  {
+    coffeImg: "",
+    title: "Pike Place Roast",
+    origin: "Latin America",
+    description: "Pike Place Seatle",
+    roast: "Medium",
+    processing: "Washed",
+    body: "Medium",
+    acidity: "Medium",
+    blend: true
+  },
+  {
+    coffeImg: "",
+    title: "Kenya",
+    origin: "Africa",
+    description: "Kenya 1971",
+    roast: "Medium",
+    processing: "Washed",
+    body: "Full",
+    acidity: "High",
+    blend: false
+  },
+  {
+    coffeeImg: "",
+    title: "Guatemala Antigua",
+    origin: "Latin Amaerica, Guatemala",
+    description: "Guatemala",
+    roast: "Medium",
+    processing: "Washed",
+    body: "Medium",
+    acidity: "Medium",
+    blend: false
+  },
+  {
+    coffeImg: "",
+    title: "Ethiopia",
+    origin: "Africa, Ethiopia",
+    description: "Where everything started",
+    roast: "Medium",
+    processing: "Washed",
+    body: "Medium",
+    acidity: "High",
+    blend: false
+  },
+  {
+    coffeImg: "",
+    title: "House Blend",
+    origin: "Latin America",
+    description: "First Coffee",
+    roast: "Medium",
+    processing: "Washed",
+    body: "Medium",
+    acidity: "Medium",
+    blend: true
+  },
+  {
+    coffeImg: "",
+    title: "Blonde Roast",
+    origin: "Latin America, Africa",
+    description: "",
+    roast: "Blonde",
+    processing: "",
+    body: "",
+    acidity: "",
+    blend: true
+  }
 ];
 
 mongoose
