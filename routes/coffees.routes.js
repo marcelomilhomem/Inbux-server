@@ -5,6 +5,7 @@ const Coffee = require("../models/Coffee.model");
 router.get("/coffees", (req, res, next) => {
   Coffee.find({})
     .then((coffees) => {
+      console.log(coffees)
       res.status(200).json(coffees);
     })
     .catch(() => res.status(400).json({ message: "No coffees foud :(" }));

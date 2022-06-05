@@ -23,8 +23,8 @@ const brewingArr = [
     title: "Chemex",
     coffeeGrind: "Medium coarse (coarse | rough sand)",
     quantity: "10 g coffe for 120 ml - 180 ml water",
-    extractionTime: 3,
-    waterTemperature: 94,
+    extractionTime: "3",
+    waterTemperature: "94",
     advice:
       "Get the most out of our coffee by using a quality conical burr grinder, a scale, a timer and high-quality water. The standard golden ratio for Chemex® is 1g coffee to 15-18g water (1:15-18)",
   },
@@ -32,8 +32,8 @@ const brewingArr = [
     title: "Kalita",
     coffeeGrind: "Medium coarse (coarse | rough sand)",
     quantity: "15 g of coffee to 230 g of water",
-    extractionTime: 3,
-    waterTemperature: 94,
+    extractionTime: "3",
+    waterTemperature: "94",
     advice:
       "Get the most out of our coffee by using a quality conical burr grinder, a scale, a timer and high-quality water. The standard golden ratio for Kalita® is 1g coffee to 15-18g water (1:15-18)",
   },
@@ -41,8 +41,8 @@ const brewingArr = [
     title: "v60",
     coffeeGrind: "Medium coarse (coarse | rough sand",
     quantity: "10 g coffee for 120 ml - 180 ml water",
-    extractionTime: 3,
-    waterTemperature: 94,
+    extractionTime: "3",
+    waterTemperature: "94",
     advice:
       "Get the most out of our coffee by using a quality burr grinder, a scale, a timer and high-quality water. The standard golden ratio for V60 is 1g coffee to 15-18g water (1:15-18)",
   },
@@ -50,8 +50,8 @@ const brewingArr = [
     title: "Aeropress",
     coffeeGrind: "Medium coarse (rough sand)",
     quantity: "18 g of coffee to 220 g of water",
-    extractionTime: 1,
-    waterTemperature: 92,
+    extractionTime: "1",
+    waterTemperature: "92",
     advice:
       "Get the most out of our coffee by using a quality conical burr grinder, a scale, a timer and high-quality water. This recipe is known as an 'Inverted' method.",
   },

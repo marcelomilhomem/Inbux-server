@@ -4,8 +4,8 @@ const brewingSchema = new Schema({
     title: String,
     coffeeGrind: String,
     quantity: String,
-    extractionTime: Number,
-    waterTemperature: Number,
+    extractionTime: String,
+    waterTemperature: String,
     advice: String,
 });
 
