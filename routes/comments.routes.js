@@ -1,13 +1,14 @@
 const router = require("express").Router();
 const User = require("../models/User.model");
 const Coffee = require("../models/Coffee.model");
-const Comment = require("../models/Comments.model");
+const Comment = require("../models/Comment.model");
 
 router.post("/post/:id/comment", (req, res, next) => {
-  const { author, text } = req.body;
-  const { id } = req.params;
+  const { comment } = req.body;
+  const { id } = req.params; 
+  const { _id } = req.payload;
 
-  Comment.create({ author, text }).then((createdComment) => {
+  Comment.create({ author: _id, comment }).then((createdComment) => {
     return Coffee.findByIdAndUpdate(id, {
       $push: { comments: createdComment._id },
     })

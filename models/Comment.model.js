@@ -5,6 +5,6 @@ const commentsSchema = new Schema({
   author: { type: Schema.Types.ObjectId, ref: "User" }
 });
 
-const Comments = model("Comments", commentsSchema);
+const Comment = model("Comment", commentsSchema);
 
-module.exports = Comments;
+module.exports = Comment;
