@@ -21,6 +21,8 @@ mongoose
 const brewingArr = [
   {
     title: "Chemex",
+    image:
+      "https://images.unsplash.com/photo-1574359172160-c7ae4fadcacc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1151&q=80",
     coffeeGrind: "Medium coarse (coarse | rough sand)",
     quantity: "10 g coffe for 120 ml - 180 ml water",
     extractionTime: "3",
@@ -30,6 +32,8 @@ const brewingArr = [
   },
   {
     title: "Kalita",
+    image:
+      "https://images.unsplash.com/photo-1641687780864-11dbb9fff7fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
     coffeeGrind: "Medium coarse (coarse | rough sand)",
     quantity: "15 g of coffee to 230 g of water",
     extractionTime: "3",
@@ -39,6 +43,8 @@ const brewingArr = [
   },
   {
     title: "v60",
+    image:
+      "https://images.unsplash.com/photo-1620051524446-5160985790e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
     coffeeGrind: "Medium coarse (coarse | rough sand",
     quantity: "10 g coffee for 120 ml - 180 ml water",
     extractionTime: "3",
@@ -48,6 +54,8 @@ const brewingArr = [
   },
   {
     title: "Aeropress",
+    image:
+      "https://images.unsplash.com/photo-1643945016492-e95a055908d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80",
     coffeeGrind: "Medium coarse (rough sand)",
     quantity: "18 g of coffee to 220 g of water",
     extractionTime: "1",

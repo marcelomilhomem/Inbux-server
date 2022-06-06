@@ -46,6 +46,8 @@ router.get('/user/:username', (req, res, next) => {
       .then((response) => res.json(response))
       .catch((err) => res.status(400).json({ message: 'Invalid username supplied' }));
   });
+
+  
   
 
 module.exports = router;
