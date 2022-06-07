@@ -13,8 +13,6 @@ const coffeesArr = [
   {
     coffeeImg:
       "https://www.starbucks.pt/sites/starbucks-pt/files/styles/c10_2_col_text_560x467/public/2020-07/Sumatra-Package1-Dark-Roast-C10-RESIZED.png.webp?itok=V21a9R8Q",
-    coffeeImg2:
-      "https://stories.starbucks.com/wp-content/uploads/2019/01/sumatra-women-01-1.jpg",
     title: "Sumatra",
     origin: "Asia Pacific, Sumatra",
     description: "Bold, dark roast coffeee",
