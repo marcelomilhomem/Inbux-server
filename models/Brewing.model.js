@@ -2,7 +2,7 @@ const { Schema, model } = require("mongoose");
 
 const brewingSchema = new Schema({
   title: String,
-  image: String,
+  imgUrl: String,
   coffeeGrind: String,
   quantity: String,
   extractionTime: String,
