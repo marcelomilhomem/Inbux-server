@@ -14,7 +14,12 @@ router.get("/coffees", (req, res, next) => {
 router.get("/coffees/:coffeeId", (req, res, next) => {
   const { coffeeId } = req.params;
   Coffee.findById(coffeeId)
-    .populate("comments")
+    .populate({
+      path: "comments",
+      populate: {
+        path: "author",
+      },
+    })
     .then((response) => res.status(200).json(response))
     .catch((err) => res.status(405).json({ message: "Invalid input" }));
 });
