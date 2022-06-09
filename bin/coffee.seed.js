@@ -64,7 +64,7 @@ const coffeesArr = [
     No matter how many times we've earned Dave's seal of approval, I still get butterflies every time he walks in.`,
     roast: "Dark",
     processing: "Washed",
-    body: "High",
+    body: "High", 
     acidity: "Medium",
     blend: true,
   },
